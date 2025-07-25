@@ -1,0 +1,14 @@
+name: Test Reusable Workflow
+
+run-name: ${{ github.actor }} is testing out Reusable Workflow 🚀
+
+on:
+  workflow_call:
+
+jobs:
+  TestReusable:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Call Reusable Workflow
+        run: echo "Calling reusable workflow..."

@@ -119,3 +119,6 @@ jobs:
       - name: Check Space Usage
         # if: (!cancelled())
         run: df -hT
+
+  call-workflow-1-in-local-repo:
+    uses: ./.github/workflows/reusable.yml
